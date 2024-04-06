@@ -1,0 +1,33 @@
+ int sayi1, sayi2, ort;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Temizle Buton
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Kontrol Buton
+            sayi1 = Convert.ToInt32(textBox1.Text);
+            sayi2 = Convert.ToInt32(textBox2.Text);
+            ort = (sayi1 + sayi2)  /2;
+
+            if (ort >= 50 && ort <= 70)
+            {
+                MessageBox.Show("Öğrenci Geçti");
+            }
+            if (ort > 70 && ort < 85)
+            {
+                MessageBox.Show("Öğrenci Teşekkür ile Geçti");
+            }
+            if (ort >= 85)
+            {
+                MessageBox.Show("Öğrenci Taktir ile Geçti");
+            }
+             if (ort < 50)
+            {
+                MessageBox.Show("Öğrenci Kaldı");
+            }
+        }
